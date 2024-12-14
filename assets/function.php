@@ -1,7 +1,7 @@
 <?php 
 function setBalance($amount,$process,$accountNo)
 {
-	$con = new mysqli(' sql8.freemysqlhosting.net','sql8752065',' AYIDqliP8I','sql8752065');
+	$con = new mysqli('sql8.freemysqlhosting.net','sql8752065','AYIDqliP8I','sql8752065');
 	$array = $con->query("select * from userAccounts where accountNo='$accountNo'");
 	$row = $array->fetch_assoc();
 	if ($process == 'credit') 
