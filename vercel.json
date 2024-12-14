@@ -2,7 +2,8 @@
     "version": 2,
     "builds": [
       {
-        "src": "**/*.php" 
+        "src": "**/*.php", 
+        "use": "@vercel/php@latest" 
       }
     ],
     "routes": [
